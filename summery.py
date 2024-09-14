@@ -1,8 +1,8 @@
 #pip install streamlit transformers torch
-pip install transformers
-pip install torch
-pip install tensorflow
-from transformers import pipeline
+#pip install transformers
+#pip install torch
+#pip install tensorflow
+#from transformers import pipeline
 import streamlit as st
 from transformers import pipeline
 
