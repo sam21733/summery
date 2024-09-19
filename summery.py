@@ -1,4 +1,18 @@
 #pip install streamlit transformers torch
+import subprocess
+import sys
+
+def install(package):
+    # This runs the pip command to install the specified package
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+# Example: Install the transformers package
+install("transformers")
+packages = ["transformers", "torch", "numpy"]
+
+for package in packages:
+    install(package)
+    
 import streamlit as st
 from transformers import pipeline
 
